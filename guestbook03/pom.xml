@@ -5,7 +5,7 @@
     <artifactId>spring-practice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>hellospring</artifactId>
+  <artifactId>guestbook03</artifactId>
   <packaging>war</packaging>
   
     <properties>
@@ -15,9 +15,8 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<!-- springframework version -->
 		<org.springframework-version>5.3.25</org.springframework-version>
-	</properties>
+   </properties>
 
-  
   <dependencies>
 	  	<!-- spring context-->
 		<dependency>
@@ -39,6 +38,20 @@
 		    <artifactId>spring-webmvc</artifactId>
 		    <version>${org.springframework-version}</version>
 		</dependency>
+		
+		<!-- jstl -->
+		<dependency>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		
+		<!-- MariaDB JDBC Driver -->
+		<dependency>
+	   	 	<groupId>org.mariadb.jdbc</groupId>
+	   		 <artifactId>mariadb-java-client</artifactId>
+	   		 <version>3.0.8</version>
+		</dependency>
 
 		 <!-- servlet -->
 		<dependency>
@@ -53,10 +66,10 @@
 	    	<version>2.2</version>
 	    	<scope>provided</scope>
 		</dependency>
-  </dependencies>
-  	
+  </dependencies>  
+  
   <build>
-	  <finalName>hellospring</finalName>
+	  <finalName>guestbook03</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
